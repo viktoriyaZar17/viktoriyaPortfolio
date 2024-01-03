@@ -1,0 +1,138 @@
+.contact {
+  display: flex;
+  align-items: center;
+  width: 390px;
+  margin-bottom: 25px;
+}
+
+.contact__type {
+  position: relative;
+}
+
+.contact__name {
+  height: 37px;
+  z-index: 1;
+  max-width: 123px;
+  min-width: 123px;
+  position: relative;
+  padding: 10px 12px;
+  padding-right: 60px;
+  cursor: pointer;
+  border: 1px solid var(--light-grey);
+  background-color: var(--shine-grey);
+  color: var(--black);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact__name::before {
+  content: '';
+  position: absolute;
+  right: 8px;
+  top: 13px;
+  width: 10px;
+  height: 10px;
+  background-image: url(../img/contact-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: background-color 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+.contact__name:hover {
+  background-color: var(--light-grey);
+}
+
+.contact__name:active {
+  background-color: var(--shine-grey);
+}
+
+.contact__list_active.contact__name::before {
+  transform: rotate(-180deg);
+}
+
+.contact__list {
+  z-index: 2;
+  position: absolute;
+  font-size: 12px;
+  padding: 10px 0 10px;
+  width: 100%;
+  max-width: 123px;
+  min-width: 123px;
+  top: 36px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+  background-color: var(--shine-grey);
+  border: 1px solid var(--light-grey);
+}
+
+.contact__list.contact__list_active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+}
+
+.contact__item {
+  cursor: pointer;
+  padding: 4px 0 4px 12px;
+  border-bottom: 7px;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--black);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact__item:hover {
+  background-color: var(--light-grey);
+}
+
+.contact__input {
+  padding-left: 12px;
+  width: 100%;
+  height: 37px;
+  display: block;
+  border: 1px solid var(--light-grey);
+  border-left: none;
+  background-color: transparent;
+  color: var(--black);
+  outline: none;
+}
+
+.contact__delete {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  align-self: stretch;
+  background-color: var(--shine-grey);
+  border: 1px solid var(--light-grey);
+  border-left: none;
+}
+
+.contact__delete svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+  fill: var(--grey);
+  transition: fill 0.3s ease-in-out;
+}
+
+.contact__delete:hover svg {
+  fill: var(--red)
+}
+
+.contact__delete:hover .contact__tooltip {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+}
+
+.contact__delete .contact__tooltip {
+  min-width: 131px;
+  top: -30px;
+}

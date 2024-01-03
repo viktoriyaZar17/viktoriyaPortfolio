@@ -1,0 +1,32 @@
+.header__inner {
+  position: relative;
+  width: 100%;
+}
+
+.find-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  max-width: 581px;
+  top: 47px;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  background-color: var(--white);
+  box-shadow: 0px 9.030119895935059px 27.09035873413086px 0px rgba(176, 190, 197, 0.32);
+  padding: 10px 10px 10px 16px;
+}
+
+.find-list {
+  color: var(--black);
+}
+/*
+.find-list__link:not(:last-child) {
+  margin-bottom: 5px;
+  border-bottom: 1px solid var(--grey);
+}
+*/
+.hide {
+  display: none;
+}
