@@ -1,0 +1,43 @@
+.product-inf__box-main {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid rgb(92, 92, 235);
+  border-radius: 15px;
+}
+
+.product-inf__box-img {
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.product-inf__img {
+  display: block;
+  margin: 0 auto;
+  height: 40vw;
+}
+
+.product-inf__box-price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.product-inf__price {
+  font-size: 30px;
+}
+
+.product-inf__count {
+  font-size: 30px;
+  color: rgb(92, 92, 235);
+}
+
+.product-inf__desc {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.product-inf__add-basket {
+  display: flex;
+  align-self: flex-end;
+}

@@ -1,0 +1,19 @@
+/* .products-list {
+} */
+
+.products-list__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.products-list__msg {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: gray;
+  padding: 20px 0;
+}
